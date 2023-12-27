@@ -95,6 +95,8 @@ typedef enum
 	/* AGGREGATE_CUSTOM must come last */
 	AGGREGATE_CUSTOM_COMBINE = 31,
 	AGGREGATE_CUSTOM_ROW_GATHER = 32,
+
+	AGGREGATE_JSON_ARRAYAGG = 33,
 } AggregateType;
 
 
@@ -150,7 +152,7 @@ static const char *const AggregateNames[] = {
 	"bit_and", "bit_or", "bool_and", "bool_or", "every",
 	"hll_add_agg", "hll_union_agg",
 	"topn_add_agg", "topn_union_agg",
-	"any_value"
+	"any_value", "json_arrayagg"
 };
 
 

@@ -1830,7 +1830,8 @@ MasterAggregateExpression(Aggref *originalAggregate,
 			 aggregateType == AGGREGATE_JSONB_AGG ||
 			 aggregateType == AGGREGATE_JSONB_OBJECT_AGG ||
 			 aggregateType == AGGREGATE_JSON_AGG ||
-			 aggregateType == AGGREGATE_JSON_OBJECT_AGG)
+			 aggregateType == AGGREGATE_JSON_OBJECT_AGG ||
+			 aggregateType == AGGREGATE_JSON_ARRAYAGG)
 	{
 		/*
 		 * Array and json aggregates are handled in two steps. First, we compute
